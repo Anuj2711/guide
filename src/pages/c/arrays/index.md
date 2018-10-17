@@ -69,6 +69,27 @@ In this example `var` is going to store the value `1`.
 
 * Some texts refer to one-dimensional arrays as vectors, two-dimensional arrays as matrices, and use the general term arrays when the number of dimensions is unspecified or unimportant.
 
+# Two-Dimensional Arrays in C:
+
+Declaration:
+```C
+datatype arrayname[row_size][column_size]
+```
+We cannot use one pair of parenthesis with commas to separate array size in C unlike many other programming languages.
+
+Initialization:
+```C
+static datatype arrayname[row_size][column_size]={list of values}
+```
+example: 
+```C
+static int a[2][2]={1,2,3,4};
+```
+initializes an array with 2 rows and 2 columns. Row 1 has elements `1` and `2` and row 2 has elements `3` and `4` .
+It is equivalent to 
+```C
+static int a[2][2]={(1,2},{3,4}};
+```
 
 ## Multi-dimensional Arrays in C
 
